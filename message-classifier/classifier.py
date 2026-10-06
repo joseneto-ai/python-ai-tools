@@ -131,4 +131,3 @@ if __name__ == "__main__":
         print(f"Message: {msg}")
         result = classify_message(msg)
         print(f"Result:  {json.dumps(result, indent=2)}\n")
-```

@@ -1,64 +1,62 @@
-# 🐍 Python AI Tools — zNeto.AI
+# Python AI Tools — estudos em Python
 
-Practical Python utilities built for real AI automation workflows.
-These scripts are used internally at zNeto.AI as building blocks
-for larger automation pipelines — extracted, sanitized, and documented
-for reuse.
+Sou José Neto, estudante do segundo período de Engenharia de Computação no CEFET-MG. Conheço o básico de Python e estou aprofundando meus fundamentos.
 
-Each tool is self-contained, dependency-light, and built to plug
-directly into n8n workflows, APIs, or standalone automation scripts.
+Este repositório reúne scripts de estudo sobre processamento de dados e integração com IA. São experimentos educacionais em revisão, sem garantia de uso em produção.
 
----
+## Objetivos de aprendizagem
 
-## 🧰 Available Tools
+- Praticar funções, dicionários, listas e tratamento de erros.
+- Entender formatos de dados recebidos por webhooks.
+- Estudar chamadas a APIs e processamento das respostas.
+- Melhorar documentação e acrescentar testes conforme aprender.
 
-### 1. 🧠 Message Classifier
-Classifies any text input by intent using the OpenAI API.
-Returns a structured JSON result ready for downstream routing logic.
+## Scripts
 
-→ [`/message-classifier`](./message-classifier/README.md)
+| Pasta | Conteúdo | Dependências |
+|---|---|---|
+| [webhook-parser](./webhook-parser/README.md) | Normalização de exemplos de dados de formulário, JSON simples e mensagens de texto no formato de webhook da Meta. | Biblioteca padrão do Python. |
+| [message-classifier](./message-classifier/README.md) | Experimento de classificação de mensagens usando a API da OpenAI. | `openai`, `python-dotenv` e chave de API. |
+| [report-generator](./report-generator/README.md) | Experimento de geração de texto a partir de métricas fornecidas em um dicionário. | `openai`, `python-dotenv` e chave de API. |
 
----
+## Como começar
 
-### 2. 🔗 Webhook Payload Parser
-Normalizes incoming webhook payloads from any source into a
-clean, consistent data structure — regardless of origin format.
+Use Python 3.10 ou superior. A partir da raiz deste repositório, execute o parser:
 
-→ [`/webhook-parser`](./webhook-parser/README.md)
-
----
-
-### 3. 📊 Automated Report Generator
-Takes raw interaction or lead data and generates a structured
-summary report using an LLM — ready to send to clients or
-internal teams.
-
-→ [`/report-generator`](./report-generator/README.md)
-
----
-
-## ⚙️ Requirements
-
-- Python 3.10+
-- `openai` library — `pip install openai`
-- `python-dotenv` — `pip install python-dotenv`
-
-Each tool folder contains its own setup instructions.
-
----
-
-## 🔐 Environment Variables
-
-All tools read credentials from a `.env` file.
-Never hardcode API keys. A `.env.example` file is provided
-in each tool folder as a reference.
-
----
-
-## 👤 Author
-
-**José Neto** — AI Automation Engineer & Founder @zNeto.AI
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-José%20Neto-0077B5?style=flat&logo=linkedin)](https://www.linkedin.com/in/jos%C3%A9-neto-b88558398)
-[![GitHub](https://img.shields.io/badge/GitHub-joseneto--ai-181717?style=flat&logo=github)](https://github.com/joseneto-ai)
+```bash
+python webhook-parser/parser.py
 ```
+
+Esse exemplo não precisa de chave de API.
+
+Para os experimentos com IA, instale as dependências em um ambiente virtual:
+
+```bash
+python -m pip install -r requirements.txt
+```
+
+As instruções de configuração estão nos READMEs de cada pasta. Chamadas à API podem gerar cobrança.
+
+## Limitações atuais
+
+- Os scripts ainda não incluem uma suíte de testes automatizados.
+- O parser aceita estruturas específicas; não é um parser universal.
+- O classificador não valida completamente os campos e valores retornados pelo modelo.
+- O gerador não verifica os cálculos produzidos pela IA.
+- Os exemplos não demonstram integração real com WhatsApp, n8n ou CRM.
+- Não há resultados comerciais comprovados por este repositório.
+
+O exemplo no formato de webhook da Meta é um estudo separado da minha experiência na hamburgueria, onde usei uma integração não oficial com WhatsApp.
+
+## Próximos passos
+
+1. Executar e compreender o parser.
+2. Criar testes para entradas válidas, vazias e incompletas.
+3. Melhorar a validação de dados.
+4. Estudar os experimentos com IA depois de consolidar essa base.
+
+## Autoria e revisão
+
+José Neto — estudante de Engenharia de Computação no CEFET-MG.
+
+Esta revisão de documentação e os pequenos ajustes propostos tiveram apoio de IA. Meu objetivo é compreender, executar e melhorar o código durante os estudos.

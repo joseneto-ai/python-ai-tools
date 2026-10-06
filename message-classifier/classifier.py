@@ -14,7 +14,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+
 
 SYSTEM_PROMPT = """
 You are an intent classification engine.

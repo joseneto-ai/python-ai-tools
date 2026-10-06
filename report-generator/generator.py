@@ -15,7 +15,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+
 
 SYSTEM_PROMPT = """
 You are a professional business analyst writing concise performance
@@ -58,7 +58,12 @@ Calculate percentages where relevant.
 Be precise with numbers. Keep the report under 250 words.
 """
 
-    try:
+        try:
+        api_key = os.getenv("OPENAI_API_KEY")
+        if not api_key:
+            raise ValueError("Defina OPENAI_API_KEY no arquivo .env local.")
+
+        client = OpenAI(api_key=api_key)
         response = client.chat.completions.create(
             model="gpt-4o",
             messages=[

@@ -149,7 +149,7 @@ if __name__ == "__main__":
                 "value": {
                     "messages": [{
                         "from": "5531999990000",
-                        "text": {"body": "I want to schedule a consultation"},
+                        "text": {"body": "Quero informações sobre o produto."},
                         "timestamp": "1700000000"
                     }]
                 }
@@ -158,9 +158,9 @@ if __name__ == "__main__":
     }
 
     webform_payload = {
-        "email": "patient@example.com",
+        "email": "pessoa@exemplo.com",
         "phone": "5531988880000",
-        "message": "Interested in rhinoplasty, can you send pricing?"
+        "message": "Tenho interesse no produto. Pode enviar o preço?."
     }
 
     generic_payload = {

@@ -6,7 +6,7 @@ into a consistent data structure for downstream processing.
 
 Supported sources: whatsapp, webform, generic
 
-Author: José Neto @zNeto.AI
+Author: José Neto — estudante de Engenharia de Computação no CEFET-MG
 """
 
 from datetime import datetime, timezone

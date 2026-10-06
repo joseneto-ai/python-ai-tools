@@ -58,7 +58,7 @@ Calculate percentages where relevant.
 Be precise with numbers. Keep the report under 250 words.
 """
 
-        try:
+    try:
         api_key = os.getenv("OPENAI_API_KEY")
         if not api_key:
             raise ValueError("Defina OPENAI_API_KEY no arquivo .env local.")

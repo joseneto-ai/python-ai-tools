@@ -4,7 +4,7 @@ Message Intent Classifier
 Classifies incoming text messages by intent using the OpenAI API.
 Returns a structured JSON result for downstream routing logic.
 
-Author: José Neto @zNeto.AI
+Author: José Neto — estudante de Engenharia de Computação no CEFET-MG
 """
 
 import os

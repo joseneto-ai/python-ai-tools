@@ -124,10 +124,10 @@ def batch_classify(messages: list[str]) -> list[dict]:
 if __name__ == "__main__":
     # Example usage
     test_messages = [
-        "I'd like to schedule a consultation for next week, how much does it cost?",
-        "Just browsing, what kind of services do you offer?",
-        "I've been in pain since my procedure yesterday, please help.",
-        "asdfgh random text here"
+        "Quero saber o preço e a disponibilidade para amanhã.",
+        "Pode explicar melhor como funciona o serviço?",
+        "Meu pedido não chegou e preciso de atendimento.",
+        "Mensagem sem relação com o atendimento."
     ]
 
     print("=== Message Intent Classifier ===\n")

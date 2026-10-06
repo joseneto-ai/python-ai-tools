@@ -66,7 +66,12 @@ def classify_message(message: str) -> dict:
             "recommended_action": "log_and_ignore"
         }
 
-    try:
+       try:
+        api_key = os.getenv("OPENAI_API_KEY")
+        if not api_key:
+            raise ValueError("Defina OPENAI_API_KEY no arquivo .env local.")
+
+        client = OpenAI(api_key=api_key)
         response = client.chat.completions.create(
             model="gpt-4o",
             messages=[

@@ -160,7 +160,7 @@ if __name__ == "__main__":
     webform_payload = {
         "email": "pessoa@exemplo.com",
         "phone": "5531988880000",
-        "message": "Tenho interesse no produto. Pode enviar o preço?."
+        "message": "Tenho interesse no produto. Pode enviar o preço?"
     }
 
     generic_payload = {

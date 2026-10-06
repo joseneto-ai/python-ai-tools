@@ -102,7 +102,7 @@ def save_report(report: str, filename: str = None) -> str:
 
 
 if __name__ == "__main__":
-    # Replace with your actual data
+       # Dados de demonstração; não representam resultados comerciais comprovados.
     lead_data = {
         "period": "2024-11-01 to 2024-11-14",
         "total_leads": 84,

@@ -4,7 +4,7 @@ Automated Report Generator
 Generates structured lead and automation performance reports
 using GPT-4o based on raw interaction data.
 
-Author: José Neto @zNeto.AI
+Author: José Neto — estudante de Engenharia de Computação no CEFET-MG
 """
 
 import os

@@ -47,7 +47,7 @@ As instruções de configuração estão nos READMEs de cada pasta. Chamadas à 
 - Os exemplos não demonstram integração real com WhatsApp, n8n ou CRM.
 - Não há resultados comerciais comprovados por este repositório.
 
-O exemplo no formato de webhook da Meta é um estudo separado da minha experiência na hamburgueria, onde usei uma integração não oficial com WhatsApp.
+O exemplo no formato de webhook da Meta é um estudo separado da minha experiência em um negócio local, onde usei uma integração não oficial com WhatsApp.
 
 ## Próximos passos
 

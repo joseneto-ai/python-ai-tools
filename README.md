@@ -1,15 +1,16 @@
 # Python AI Tools — estudos em Python
 
-Sou José Neto, estudante do segundo período de Engenharia de Computação no CEFET-MG. Conheço o básico de Python e estou aprofundando meus fundamentos.
+Sou José Neto, estudante de Engenharia de Computação no CEFET-MG. Estou aplicando meus estudos de Python em pequenos programas e aprofundando práticas de organização, validação de dados e tratamento de erros.
 
 Este repositório reúne scripts de estudo sobre processamento de dados e integração com IA. São experimentos educacionais em revisão, sem garantia de uso em produção.
 
 ## Objetivos de aprendizagem
 
-- Praticar funções, dicionários, listas e tratamento de erros.
-- Entender formatos de dados recebidos por webhooks.
-- Estudar chamadas a APIs e processamento das respostas.
-- Melhorar documentação e acrescentar testes conforme aprender.
+- Organizar programas em funções e módulos com responsabilidades claras.
+- Tratar entradas incompletas e situações de erro.
+- Compreender dados recebidos por webhooks e APIs.
+- Aprender a validar as respostas de serviços externos.
+- Criar testes e melhorar a documentação dos exemplos.
 
 ## Scripts
 
@@ -50,10 +51,10 @@ O exemplo no formato de webhook da Meta é um estudo separado da minha experiên
 
 ## Próximos passos
 
-1. Executar e compreender o parser.
-2. Criar testes para entradas válidas, vazias e incompletas.
-3. Melhorar a validação de dados.
-4. Estudar os experimentos com IA depois de consolidar essa base.
+1. Revisar o parser e documentar com clareza os formatos aceitos.
+2. Acrescentar testes para entradas válidas, vazias e incompletas.
+3. Melhorar a validação das respostas nos experimentos com IA.
+4. Aplicar esses aprendizados em um projeto independente de comparação de tabelas de preços.
 
 ## Autoria e revisão
 
